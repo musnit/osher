@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="emailbox.js"></script>
+<script type="text/javascript">
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+</script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Osher Property Solutions</title>
+<link href="osher.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="header">
+    <a href="index.html"><img src="images/Logo.png" alt="Logo" name="Insert_logo" width="260" height="155" /></a>
+    <ul>
+      <li><a href="index.html">Osher Property Solutions</a></li>
+<li><a href="deals.html">Concluded Deals</a></li>
+<li><a href="search.html">Property Search</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+   <div class="mid">
+
+<div class="content">
+
+      <br/>
+	  <span id="text">Supply us with the following information so that we can assist to find the best solution for you.</span><br/><br/>
+
+<div class="inputbox" style="float:left;">
+<style type="text/css">
+.input {width:300px;}
+</style>
+
+<table >
+<tr>
+<td>* Name: </td>
+<td><input class="input requiredField" type="text" id = "name"/>
+</tr>
+<tr>
+<td>* Company: </td>
+<td><input class="input requiredField" type="text" id = "company"/>
+</tr>
+<tr>
+
+<tr>
+<td>* Email:</td>
+<td><input class="input email requiredField" type="text" id= "email" /></td>
+</tr>
+
+<tr>
+<td>* Mobile: </td>
+<td><input class="input phone requiredField" type="text" id= "mobile" onkeydown="return ( (event.ctrlKey || event.altKey 
+                    || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) 
+                    || (95<event.keyCode && event.keyCode<106)
+                    || (event.keyCode==8) || (event.keyCode==9) 
+                    || (event.keyCode>34 && event.keyCode<40) 
+                    || (event.keyCode==46)))"/></td>
+</tr>
+<tr>
+<td>Phone: </td>
+<td><input class="input phone" type="text" id= "phone" onkeydown="return ( (event.ctrlKey || event.altKey 
+                    || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) 
+                    || (95<event.keyCode && event.keyCode<106)
+                    || (event.keyCode==8) || (event.keyCode==9) 
+                    || (event.keyCode>34 && event.keyCode<40) 
+                    || (event.keyCode==46)))"/></td>
+</tr>
+<tr>
+<td><br/><b>Requirements</b> </td>
+</tr>
+<tr>
+<td>Industry: </td>
+<td><input class="input " type="text" id = "industry"/>
+</tr>
+<tr>
+
+<td>Location:</td>
+<td><input class="input  " type="text" id= "location" /></td>
+</tr>
+<tr>
+<td>Warehouse m²:</td>
+<td><input class="input  " type="text" id= "warehouse" /></td>
+</tr>
+<tr>
+<td>Office m²:</td>
+<td><input class="input  " type="text" id= "office" /></td>
+</tr>
+<tr>
+<td>Yard m²:</td>
+<td><input class="input  " type="text" id= "yard" /></td>
+</tr>
+<tr>
+<td>Power amps:</td>
+<td><input class="input  " type="text" id= "amps" /></td>
+</tr>
+<tr>
+<td>Other:</td>
+<td><textarea class="input  " type="text" style="width:300px; height:100px" id= "other" /></textarea></td>
+</tr>
+</table>
+
+		  </div>
+		     <p style="clear:both">	</p>	  <a href="javascript:start()"><button class="button">Submit!</button> </a>
+
+
+
+ <br/>
+   <p style="clear:both"></p>
+
+    </div>
+  </div>
+  <script type="text/javascript">
+   if (getUrlVars()["company"]!=undefined){
+	$(".content").html("Thanks! You will be contacted shortly.");
+   }
+   else if(getUrlVars()["name"]!=undefined){
+   $("#name").val(getUrlVars()["name"]);
+  $("#email").val(getUrlVars()["email"]);
+  $("#mobile").val(getUrlVars()["mobile"]);
+	$("#text").html("Thanks! You will be contacted shortly. <br/>You may supply us with the following additional information so that we can find the best solution for you.");
+   }
+  </script>
+ <div class="footer">
+  Osher Property Solutions c.c.<br />
+  Reg no:2009/223846/23.<br />
+  Tel: +2711 783 9713 / Fax: +2786 219 8083.<br />
+  Member: B Musnitzky Cell: +2782 466 8989 .<br />
+  Email:     <script type="text/javascript">document.write("<a href='mailto:".concat("notbrian@".substring(3).concat("notosher.co.za".substring(3)).concat("'>")));document.write("notbrian@".substring(3).concat("notosher.co.za".substring(3)).concat("</a>"));</script><br />
+
+<br />
+   </div>
+
+</body>
+</html>
